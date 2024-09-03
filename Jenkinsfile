@@ -1,11 +1,11 @@
 pipeline {
     
 agent {
-label 'jenkins-ansible'
+label 'node2'
 }
 
 environment {
-AWS_EC2_PRIVATEKEY=credentials('EC2-Instance-Private-Key-File')
+AWS_EC2_PRIVATEKEY=credentials('EC2-Instance-Credentials')
 }
 
 parameters {
